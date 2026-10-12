@@ -8,7 +8,7 @@ import json, os, time, urllib.error, urllib.request, urllib.parse
 
 API = "http://127.0.0.1:8000"
 LOCKED_TAG = json.load(open("/opt/locked_inbound.json"))["tag"]
-LOCKED_REMARK = "جینکس | 𝗝𝗶𝗻𝗫"                    # every config name starts with this
+LOCKED_REMARK = "باسط | 𝗕𝗮𝘀𝗲𝘁"                    # every config name starts with this
 OLD_REMARKS = ("جینکس | 𝙎𝙪𝙥𝙚𝙧 𝗝𝗶𝗻𝗫",)               # names of the previous version -> renamed automatically
 DOMAIN = os.environ.get("PANEL_DOMAIN") or os.environ.get("RAILWAY_PUBLIC_DOMAIN", "")
 CF_HOST = os.environ.get("CF_TUNNEL_HOSTNAME", "") if os.environ.get("CF_TUNNEL_TOKEN") else ""
